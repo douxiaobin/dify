@@ -69,11 +69,4 @@ RUN \
 RUN chmod +x /usr/sbin/tini
 
 
-# Install StreamPark
-COPY dist/apache-streampark*-*-bin.tar.gz /
-RUN tar -zxvf apache-streampark*-*-bin.tar.gz \
-    && mv apache-streampark*-*-bin streampark \
-    && rm -f apache-streampark*-*-bin.tar.gz
-
-
-ENTRYPOINT ["/usr/sbin/tini", "--", "/streampark/bin/streampark.sh", "start_docker"]
+ 
