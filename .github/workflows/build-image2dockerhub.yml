@@ -33,6 +33,14 @@ jobs:
             image_name_env: "BELIEFXB_API_IMAGE_NAME"
             context: "api"
             platform: linux/arm64
+          - service_name: "build-web-amd64"
+            image_name_env: "BELIEFXB_WEB_IMAGE_NAME"
+            context: "web"
+            platform: linux/amd64
+          - service_name: "build-web-arm64"
+            image_name_env: "BELIEFXB_WEB_IMAGE_NAME"
+            context: "web"
+            platform: linux/arm64
           
 
     steps:
@@ -95,6 +103,9 @@ jobs:
           - service_name: "merge-web-images"
             image_name_env: "BELIEFXB_WEB_IMAGE_NAME"
             context: "web"
+          - service_name: "merge-api-images"
+            image_name_env: "BELIEFXB_API_IMAGE_NAME"
+            context: "api"
     steps:
       - name: Download digests
         uses: actions/download-artifact@v4
