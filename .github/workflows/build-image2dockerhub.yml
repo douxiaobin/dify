@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  DOCKERHUB_USER: ${{ secrets.DOCKERHUB_USER }}
+  DOCKERHUB_USER: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
   BELIEFXB_WEB_IMAGE_NAME: ${{ vars.BELIEFXB_WEB_IMAGE_NAME || 'douxiaobin/beliefxb-web' }}
   BELIEFXB_API_IMAGE_NAME: ${{ vars.BELIEFXB_API_IMAGE_NAME || 'douxiaobin/beliefxb-api' }}
