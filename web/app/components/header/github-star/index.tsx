@@ -35,7 +35,6 @@ const GithubStar = () => {
 
   return (
     <div className='flex items-center px-2 py-1 bg-gray-100'>
-      ""
       </div>
 
   )
