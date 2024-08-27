@@ -33,12 +33,7 @@ const GithubStar = () => {
   if (!isFetched)
     return null
 
-  return (
-    <a
-      href=''
-      target='_blank' ></a>
-  )
+  return null
 }
 
 export default GithubStar
- 
