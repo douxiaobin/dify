@@ -1,8 +1,8 @@
 # Please do not directly edit this file. Instead, modify the .env variables related to NGINX configuration.
 
 server {
-    listen 80;
-    server_name  localhost;
+    listen 443;
+    server_name  demo.any800.com;
     ssl_certificate /etc/ssl/demo.any800.com.pem;
     ssl_certificate_key /etc/ssl/demo.any800.com.key;
     access_log /etc/nginx/logs/access.log  main;
