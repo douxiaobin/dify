@@ -5,9 +5,9 @@ server {
     server_name  demo.any800.com;
     ssl on;
     ssl_certificate /dify/dify/docker/nginx/ssl/demo.any800.com.pem;
-	ssl_certificate_key /dify/dify/docker/nginx/ssl/demo.any800.com.key;
-	access_log /dify/dify/docker/nginx/logs/access.log  main;
-	error_log /dify/dify/docker/nginx/logs/error.log  info;
+    ssl_certificate_key /dify/dify/docker/nginx/ssl/demo.any800.com.key;
+    access_log /dify/dify/docker/nginx/logs/access.log  main;
+    error_log /dify/dify/docker/nginx/logs/error.log  info;
     location /console/api {
       proxy_pass http://api:5001;
       include proxy.conf;
