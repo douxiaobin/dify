@@ -1,5 +1,5 @@
 const translation = {
-  title: '探索',
+  title: '新一代智能服务中台',
   sidebar: {
     discovery: '发现',
     chat: '智聊',
